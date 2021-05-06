@@ -6,6 +6,8 @@ import store from "./store";
 
 import App from "./App";
 
+store.subscribe(() => console.log(store.getState()));
+
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
@@ -14,4 +16,3 @@ ReactDOM.render(
   </Provider>,
   rootElement
 );
-store.subscribe();
